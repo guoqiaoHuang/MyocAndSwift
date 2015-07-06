@@ -14,6 +14,7 @@
 		7852B14B1B4A748800323ABA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7852B14A1B4A748800323ABA /* Images.xcassets */; };
 		7852B14E1B4A748800323ABA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7852B14C1B4A748800323ABA /* LaunchScreen.xib */; };
 		7852B15A1B4A748800323ABA /* MyocAndSwiftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852B1591B4A748800323ABA /* MyocAndSwiftTests.m */; };
+		7852B1651B4A771400323ABA /* FirstSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7852B1641B4A771400323ABA /* FirstSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		7852B1531B4A748800323ABA /* MyocAndSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyocAndSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7852B1581B4A748800323ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7852B1591B4A748800323ABA /* MyocAndSwiftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyocAndSwiftTests.m; sourceTree = "<group>"; };
+		7852B1631B4A771300323ABA /* MyocAndSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyocAndSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		7852B1641B4A771400323ABA /* FirstSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +88,12 @@
 				7852B1421B4A748700323ABA /* AppDelegate.m */,
 				7852B1441B4A748700323ABA /* ViewController.h */,
 				7852B1451B4A748700323ABA /* ViewController.m */,
+				7852B1641B4A771400323ABA /* FirstSwift.swift */,
 				7852B1471B4A748800323ABA /* Main.storyboard */,
 				7852B14A1B4A748800323ABA /* Images.xcassets */,
 				7852B14C1B4A748800323ABA /* LaunchScreen.xib */,
 				7852B13D1B4A748700323ABA /* Supporting Files */,
+				7852B1631B4A771300323ABA /* MyocAndSwift-Bridging-Header.h */,
 			);
 			path = MyocAndSwift;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7852B1651B4A771400323ABA /* FirstSwift.swift in Sources */,
 				7852B1461B4A748700323ABA /* ViewController.m in Sources */,
 				7852B1431B4A748700323ABA /* AppDelegate.m in Sources */,
 				7852B1401B4A748700323ABA /* main.m in Sources */,
@@ -347,9 +353,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MyocAndSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyocAndSwift/MyocAndSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -357,9 +366,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MyocAndSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyocAndSwift/MyocAndSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};

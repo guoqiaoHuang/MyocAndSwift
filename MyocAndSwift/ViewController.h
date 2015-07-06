@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)gogogo:(UIButton *)sender;
 
 @end
 

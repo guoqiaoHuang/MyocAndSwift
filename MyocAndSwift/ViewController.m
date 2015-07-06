@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "MyocAndSwift-Swift.h"
+#import "FirstSwift.swift"
 @interface ViewController ()
 
 @end
@@ -24,4 +25,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)gogogo:(UIButton *)sender {
+    FirstSwift *testswift=[[FirstSwift alloc]inint];
+}
 @end
